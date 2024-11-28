@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px;
+        }
+        #left{
+            background-color: blue;
+            
+         }
+         #rich{
+            display: flex;
+            justify-content: center;
+         }
+        .enjoi{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        #right{
+            background-color: red;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;        
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+    <div id="left"> 
+        <div id="rich"><h1>Left</h1></div>
+        <div class="enjoi"><b>Text</b><b>Text</b><b>Text</b><b>Text</b></div>
+        <div class="enjoi"><b>Text</b><b>Text</b><b>Text</b><b>Text</b></div>
+        <div class="enjoi"><b>Text</b><b>Text</b><b>Text</b><b>Text</b></div>
+        <div class="enjoi"><b>Text</b><b>Text</b><b>Text</b><b>Text</b></div>
+</div>
+    <div id="right"> 
+        <div id="1"><h1>Col 1</h1><h1>Col 1</h1><h1>Col 1</h1></div>
+        <div id="1"><h1>Col 2</h1><h1>Col 2</h1><h1>Col 2</h1></div>
+        <div id="1"><h1>Col 3</h1><h1>Col 3</h1><h1>Col 3</h1></div>
+    </div>
+    </div>
+</body>
+</html>
